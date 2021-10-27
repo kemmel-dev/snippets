@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Update transform scale</Title>
+			<Author>Kamiel de Visser</Author>
+			<Description>Updates a transform scale in Unity.</Description>
+			<Shortcut>uscale</Shortcut>
+        </Header>
+		<Snippet>
+		  <Code Language="CSharp">
+			<![CDATA[$transformName$.localScale += new Vector3($varX$, $varY$, $varZ$);]]>
+		  </Code>
+		  <Declarations>
+			<Literal>
+			  <ID>transformName</ID>
+			  <ToolTip>Variable name of the transform.</ToolTip>
+			  <Default>transform</Default>
+			</Literal>
+			<Literal>
+			  <ID>varX</ID>
+			  <ToolTip>Position X.</ToolTip>
+			  <Default>0</Default>
+			</Literal>
+			<Literal>
+			  <ID>varY</ID>
+			  <ToolTip>Position Y.</ToolTip>
+			  <Default>0</Default>
+			</Literal>
+			<Literal>
+			  <ID>varZ</ID>
+			  <ToolTip>Position Z.</ToolTip>
+			  <Default>0</Default>
+			</Literal>
+		  </Declarations>
+		</Snippet>
+
+    </CodeSnippet>
+</CodeSnippets>

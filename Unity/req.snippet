@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Add Require Component attribute</Title>
+			<Author>Kamiel de Visser</Author>
+			<Description>Adds a require component attribute.</Description>
+			<Shortcut>req</Shortcut>
+        </Header>
+		<Snippet>
+		  <Code Language="CSharp">
+			<![CDATA[[RequireComponent(typeof($type$))]]]>
+		  </Code>
+		  <Declarations>
+			<Literal>
+			  <ID>type</ID>
+			  <ToolTip>Type of component required.</ToolTip>
+			  <Default>Component</Default>
+			</Literal>
+		  </Declarations>
+		</Snippet>
+
+    </CodeSnippet>
+</CodeSnippets>
