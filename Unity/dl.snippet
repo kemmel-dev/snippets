@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Unity Debug Log</Title>
+			<Author>Kamiel de Visser</Author>
+			<Description>Opens a Debug Log statement.</Description>
+			<Shortcut>dl</Shortcut>
+        </Header>
+		<Snippet>
+		  <Code Language="CSharp">
+			<![CDATA[Debug.Log($logContents$);$end$]]>
+		  </Code>
+		  <Declarations>
+			<Literal>
+			  <ID>logContents</ID>
+			  <ToolTip>The object to be logged.</ToolTip>
+			  <Default>contents</Default>
+			</Literal>
+		  </Declarations>
+		</Snippet>
+    </CodeSnippet>
+</CodeSnippets>
