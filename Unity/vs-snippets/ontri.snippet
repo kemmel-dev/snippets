@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Create OnTrigger Delegator</Title>
+			<Author>Kamiel de Visser</Author>
+			<Description>Creates an OnTrigger Delegator.</Description>
+			<Shortcut>ontri</Shortcut>
+        </Header>
+		<Snippet>
+		  <Code Language="CSharp">
+			<![CDATA[
+using UnityEngine;
+using UnityEngine.Events;
+
+public class OnTrigger$dimensions$Delegator : MonoBehaviour
+{
+    public UnityEvent<Collider$dimensions$> Enter;
+    void OnTriggerEnter$dimensions$(Collider$dimensions$ other) => Enter.Invoke(other);
+}
+			]]>
+		  </Code>
+		  <Declarations>
+			<Literal>
+			  <ID>dimensions</ID>
+			  <ToolTip>How many dimensions the OnTrigger delegator should have.</ToolTip>
+			  <Default></Default>
+			</Literal>
+		  </Declarations>
+		</Snippet>
+		
+		
+
+    </CodeSnippet>
+</CodeSnippets>

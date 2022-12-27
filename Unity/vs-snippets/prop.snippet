@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Custom Property</Title>
+			<Author>Kamiel de Visser</Author>
+			<Description>Creates a custom property.</Description>
+			<Shortcut>prop</Shortcut>
+        </Header>
+<Snippet>
+  <Code Language="CSharp">
+	<![CDATA[
+	private bool _$propertyFirstLetterLower$$propertyNameRest$;
+
+	$access1$ bool $propertyFirstLetterCaps$$propertyNameRest$
+	{
+		$access2$ get
+		{
+			return _$propertyFirstLetterLower$$propertyNameRest$;
+		}
+
+		$access3$ set
+		{
+			_$propertyFirstLetterLower$$propertyNameRest$ = value;
+		}
+	}
+	]]>
+  </Code>
+  <Declarations>
+	<Literal>
+	  <ID>propertyFirstLetterLower</ID>
+	  <ToolTip>The first letter of the property name in lower caps.</ToolTip>
+	  <Default>p</Default>
+	</Literal>
+	<Literal>
+	  <ID>propertyFirstLetterCaps</ID>
+	  <ToolTip>The first letter of the property name in lower caps.</ToolTip>
+	  <Default>P</Default>
+	</Literal>
+	<Literal>
+	  <ID>propertyNameRest</ID>
+	  <ToolTip>The name for rest of the property.</ToolTip>
+	  <Default>ropertyName</Default>
+	</Literal>
+	<Literal>
+	  <ID>access1</ID>
+	  <ToolTip>Access modifier for the property.</ToolTip>
+	  <Default>private</Default>
+	</Literal>
+	<Literal>
+	  <ID>access2</ID>
+	  <ToolTip>Access modifier for the getter.</ToolTip>
+	  <Default>private</Default>
+	</Literal>
+	<Literal>
+	  <ID>access3</ID>
+	  <ToolTip>Access modifier for the setter.</ToolTip>
+	  <Default>private</Default>
+	</Literal>
+  </Declarations>
+</Snippet>
+    </CodeSnippet>
+</CodeSnippets>
